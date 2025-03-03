@@ -1,3 +1,4 @@
+
 # Un conjunto de elementos, es una agrupacion de elementos de un tipo, o agrupados por alguna categoria
 
 # ******TIPOS**********
@@ -67,3 +68,11 @@ conjuntoDiferenciaSimetricaAyB = [1,2,4,5]
 conjuntoComplementoUniversal = [1,2,3,4,5]
 conjuntoComplementoA = [1,2]
 conjuntoComplementodeA = [3,4,5]
+
+# ******COMBINATORIA**********
+
+"""PERMUTACIONES"""
+# Cuantas formas, de ordenar los elementos, tiene un conjunto
+# => Va de la mano de Factorial
+conjuntoBase = ["ABC"]
+conjuntoPermutaciones = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"] # cantidad => 6 combinaciones
