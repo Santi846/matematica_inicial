@@ -27,7 +27,7 @@ conjuntoSubConjunto = [1,2]
 # => conjuntoSubConjunto es subconjunto => C (nomeclatura) de conjuntoOriginal
 
 # Igualdad => cuando todos los elementos del primer conjunto, coinciden con los elementos del segundo conjunto
-conjuntoA = [5, 4, 0]
+conjuntoA = [5, 4, 0]   
 conjuntoB = [5, 4, 0]
 
 # Conjunto Potencia
