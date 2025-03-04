@@ -1,9 +1,10 @@
 
-# Un conjunto de elementos, es una agrupacion de elementos de un tipo, o agrupados por alguna categoria
+# Un conjunto de elementos, es una agrupacion de elementos de un tipo, o agrupados por alguna categoria => Comprensión
 
 # ******TIPOS**********
 
 # Conjunto verduras
+# cada elemento, es la => Extensión
 conjuntoVerduras = ["apple", "banana", "cherry"]
 
 # Conjunto numerico
@@ -65,8 +66,9 @@ conjuntoDiferenciaSimetricaAyB = [1,2,4,5]
 
 # Complemento
 
-conjuntoComplementoUniversal = [1,2,3,4,5]
+conjuntoComplementoOriginalUniversal = [1,2,3,4,5]
 conjuntoComplementoA = [1,2]
+#Los que no estan en A, que llenan el conjunto universal del contexto
 conjuntoComplementodeA = [3,4,5]
 
 # ******COMBINATORIA**********
@@ -76,3 +78,55 @@ conjuntoComplementodeA = [3,4,5]
 # => Va de la mano de Factorial
 conjuntoBase = ["ABC"]
 conjuntoPermutaciones = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"] # cantidad => 6 combinaciones
+
+# Ejemplo Matemático
+formulaPermutaciones = "P(n)=n!"
+
+def P(n):
+  result_P = n*2*1
+  print(result_P)
+# EXEC
+P(3)
+
+
+"""PERMUTACIONES (Con repeticion)"""
+# Cuantas formas, de ordenar los elementos, tiene un conjunto, con elementos repetidos
+# => Va de la mano de Factorial
+conjuntoBaseRepeticion = ["AAB"]
+conjuntoPermutacionesRepeticion = ["AAB", "ABA", "BAA"] # cantidad => 3 combinaciones
+
+# Ejemplo Matemático
+formulaPermutacionesRepeticion = "P(n;a,b,c,...) = n! / (a!×b!×c!...)"
+
+def P_cr(n ,a, b ):
+  dividendo = n*2*1
+  divisor = a*b
+  print(dividendo/divisor)
+# EXEC
+P_cr(3, 2, 1)
+
+"""COMBINACIONES"""
+# Formas de seleccionar elementos de un conjunto
+conjuntoCombinacionesOriginal = [5,2]
+conjuntoCombinacionesTotal = 10
+
+# Ejemplo Matemático
+formulaCombinaciones = "C(n,k)= n! / (k!(n-k)!)"
+
+def C(n ,k ):
+  result_n = n*4*3*2*1
+  result_k = k*1*(n-k)*2*1
+  print(result_n/result_k)
+# EXEC
+C(5, 2)
+
+"""VARIACIONES"""
+# Formas de seleccionar elementos de un conjunto, considerando el ORDEN
+formulaVariaciones = "V(n,k)= n! / (n-k)!"
+
+def V(n ,k ):
+  result_n = n*4*3*2*1
+  result_k = (n-k)*2*1
+  print(result_n/result_k)
+# EXEC
+V(5, 2)
